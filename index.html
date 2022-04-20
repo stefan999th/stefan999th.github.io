@@ -1,25 +1,79 @@
----
-layout: default
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=index.html -->
+<html xmlns="http://www.3.org/1999/xhtml" lang="en" xml:lang="en">
 
-<div class="home">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Modell över andel vaccinerade">
+	<meta name="keywords" content="Covid-19">
+	<meta name="author" content="4C Strategies">
+	<link rel="stylesheet" type="text/css" href="sysadmin.css" title="Modell över andel vaccinerade" media="screen,projection">
+	<title>Modell över andel vaccinerade</title>
+	
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+<div id="container">
+	<div id="sitename">
+		<h1>Modell över andel vaccinerade </h1>
+	</div>
+	<div id="mainmenu">
+		<ul>
+			<li><a class="current" href="index.html">Andel Vaccinerade</a></li>
+			<li><a href="antaganden.html">Antaganden</a></li>			
+			<li><a href="prognoser.html">Prognoser</a></li>
+			<li><a href="fortydliganden.html">Förtydliganden</a></li>
 
-  <ul class="post-list">
-    
-    Stefan was here
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		</ul>
+	</div>
+ 
+	<div id="wrap">
+	<div id="rightside">		
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+	</div> 
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+		<div id="leftside">
+			<h1>Länsstyrelser</h1>	
+			<p></p><h2><a href="stockholm.html" target="_blank">	<font color="blue">Stockholm</font></a></h2><p></p>
+			<p></p><h2><a href="vastra_gotaland.html" target="_blank">	<font color="blue">Västra Götaland</font></a><br></h2><p></p>
+			<p></p><h2><a href="malmo.html" target="_blank">	<font color="blue">Malmö</font></a><br></h2><p></p>
+			</h2>
+		</div>
+	
+		<div id="content">
+			<h1>Andel vaccinerade i Stockholm</h1>
+			<p>
+			<br>
+			<script src="Chart.min.js"></script>
+			<canvas id="bar-chart" width="800" height="450"></canvas>
+			<script src="script/stockholm_andel_vacc.js"></script>
+			</p>
+	<br><br>		
+			<h1>Antal vaccinerade i Stockholm</h1>
+			<p>
+			<br>
+			<script src="Chart.min.js"></script>
+			<canvas id="stockholm_antal_vaccinerade" width="800" height="450"></canvas>
+			<script src="script/stockholm_antal_vaccinerade.js"></script>
+			</p>
+			<br>
+			
+		</div>
 
+			<!-- Some text below the centre box -->
+			
+			<ul class="linklist" style="margin-left: 40px">
+			<h2 style="margin-left: 40px"><u>Links</u></h2>
+			<li style="margin-left: 40px"><a href="https://www.4cstrategies.com/" target="_blank">4C Strategies</a></li>	
+			</ul>
+		<div class="clearingdiv">&nbsp;</div>
+
+	</div>
 </div>
+
+<div id="footer">
+	<p>2021 | Page responsible: Stefan Ehnvall</p>
+</div>
+
+
+
+</body></html>
